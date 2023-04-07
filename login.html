@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trac nghiem - Dang nhap</title>
+    <link rel="stylesheet" href="css/style_login.css">
+</head>
+<body>
+    <header class="l-header">
+        <div id="header">
+            <a href="#" class="logo"><span>Tracnghiem.</span></a>
+            <nav class="navbar">
+                <a href="#intro">Giới thiệu</a>
+                <a href="#tinhnang">Tính năng</a>
+                <a href="contact.html">Liên hệ</a>
+            </nav>
+        
+            <div class="login-signin">
+                <a href="login.html" class="log-sign-btn"><span class="log-in-btn">Đăng nhập</span></a>
+                <a href="#" class="log-sign-btn"><span class="sign-in-btn">Đăng ký</span></a>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+    <div ib="content">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <!-- sign up form -->
+                <form method="post" action="login.html">
+                <h1>Tạo tài khoản</h1>
+                <input type="text" placeholder="Tên tài khoản"/>
+                <input type="tel" placeholder="Số điện thoại"/>
+                <input type="email" placeholder="Email"/>
+                <input type="password" placeholder="Mật khẩu"/><br>
+                <button>Đăng ký</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <!-- sign in form-->
+                <form action="#" id="login-frm">
+                <h1>Đăng nhập</h1>
+                <input type="text" placeholder="Tên tài khoản"/>
+                <input type="password" placeholder="Mật khẩu"/>
+                <a href="#">Quên mật khẩu?</a><br>
+                <button>Đăng nhập</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Chào mừng bạn trở lại!</h1>
+                        <p>Để giữ kết nối, bạn vui lòng đăng nhập tài khoản của bạn tại đây!</p>
+                        <button class="ghost" id="signIn">Đăng nhập</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Chào bạn!</h1>
+                        <p>Nhập thông tin của bạn để bắt đầu hành trình ôn thi của bản thân tại đây nhé</p>
+                        <button class="ghost" id="signUp">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <script src ="js/move.js"></script>
+        </div>
+    </main>
+
+    
+    
+</body>
+</html>
