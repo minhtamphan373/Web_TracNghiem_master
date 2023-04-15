@@ -190,30 +190,3 @@ function queCounter(index){
     bottom_ques_counter.innerHTML =totalQuesCountTag;
 }
 
-const Swiper = document.querySelectorAll('.review-slider');
-
-// REVIEW SECTION //
-var swiper = new Swiper(".review-slider", {
-    slidePerView: 3,
-    spaceBetween: 20,
-    autoplay: {
-        delay: 7500,
-        disableOnInteraction: false,
-    },
-    centeredSlides: true,
-    breakpoints: {
-        0: {
-            slidePerView: 1,
-        },
-        768: {
-            slidePerView: 2,
-        },
-        1020: {
-            slidePerView: 3,
-        },
-    },
-});
-
-
-
-
