@@ -7,6 +7,9 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
         <link rel="stylesheet" href="themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="themify-icons/themify-icons.css">
     </head> 
 
     <body>
@@ -17,12 +20,12 @@
                 <nav class="navbar">
                     <a href="#intro">Giới thiệu</a>
                     <a href="#tinhnang">Tính năng</a>
-                    <a href="contact.html">Liên hệ</a>
+                    <a href="#follow">Liên hệ</a>
                 </nav>
             
                 <div class="login-signin">
-                    <a href="login.html" class="log-sign-btn"><span class="log-in-btn">Đăng nhập</span></a>
-                    <a href="#" class="log-sign-btn"><span class="sign-in-btn">Đăng ký</span></a>
+                    <a href="login.html#singin" class="log-sign-btn"><span class="log-in-btn">Đăng nhập</span></a>
+                    <a href="login.html#singup" class="log-sign-btn"><span class="sign-in-btn">Đăng ký</span></a>
                 </div>
             </div>
         </header>
@@ -37,7 +40,7 @@
                     <p class="text-description">Hy vọng <span class="logo">Tracnghiem </span>sẽ là nguồn tài liệu tham khảo hữu ích cho các bạn học sinh (và giáo viên) để chuẩn bị tốt nhất cho kỳ thi đại học hay thi THPT Quốc gia. 
                          Hãy đăng ký thành viên và bắt đầu Tracnghiem hoàn toàn miễn phí.</p>
                 </div>
-                <img src="/img/img-title.png" alt="" class="photo">
+                <img src="img/img-title.png" alt="" class="photo">
             </section>
             <!-- KET THUC GIOI THIEU -->
             
@@ -53,7 +56,7 @@
                         <div class="row list-feature">
                             <div class="col-fourth">
                                 <div class="sub-feature-content">
-                                    <img src="/img/feature_dethitracnghiem.png" alt="" class="feature-img">
+                                    <img src="img/feature_dethitracnghiem.png" alt="" class="feature-img">
                                     <h3 class=" feature-heading">Đề thi trắc nghiệm</h3>
                                     <p class="feature-description">Đa dạng đề tạo theo cấu trúc phân loại giúp bạn dễ dàng ôn tập online thi giữa kỳ, thi học kỳ theo các môn học.</p>
                                     <a href="DT_TracNghiem.html">
@@ -63,7 +66,7 @@
                             </div>
                             <div class="col-fourth">
                                 <div class="sub-feature-content">
-                                    <img src="/img/feature_dethiquocgia.png" alt="" class="feature-img">
+                                    <img src="img/feature_dethiquocgia.png" alt="" class="feature-img">
                                     <h3 class="feature-heading">Đề thi THPT Quốc gia</h3>
                                     <p class="feature-description">Tổng hợp đề thi minh họa và đề thi chính thức THPTQG các môn trắc nghiệm qua các năm.</p>
                                     <a href="THPTQG.html">
@@ -73,7 +76,7 @@
                             </div>
                             <div class="col-fourth">
                                 <div class="sub-feature-content">
-                                    <img src="/img/feature_tailieuthamkhao.png" alt="" class="feature-img">
+                                    <img src="img/feature_tailieuthamkhao.png" alt="" class="feature-img">
                                     <h3 class="feature-heading">Tài liệu tham khảo</h3>
                                     <p class="feature-description">Đa dạng các loại sách, slide bài giảng phục vụ cho việc nghiên cứu và học tập của bạn.</p>
                                     <a href="TL_ThamKhao.html">
@@ -83,10 +86,10 @@
                             </div>
                             <div class="col-fourth">
                                 <div class="sub-feature-content">
-                                    <img src="/img/feature_ontapkienthuc.png" alt="" class="feature-img">
+                                    <img src="img/feature_ontapkienthuc.png" alt="" class="feature-img">
                                     <h3 class="feature-heading">Ôn tập kiến thức</h3>
                                     <p class="feature-description">Hệ thống lý thuyết ngắn gọn, phương pháp giải nhanh dễ hiểu, bám sát đủ các môn</p>
-                                    <a href="On_Tap.html">
+                                    <a href="OnTap.html">
                                         <button class="button">Ôn tập</button>
                                     </a>
                                 </div>
@@ -99,36 +102,221 @@
             </section>
 
             <!--THEO DOI CHUNG TOI-->
-            <section class="follow"></section>
-                    <div class="container-fluid">
-                        <h3 class="text-content">Theo dõi chúng tôi!</h3>
-                        <!--Thanh vien 1-->
-                        <div class="col-2">
-                            <img src="img/avt.png" alt="" class="avt row-2">
-                            <p class="row-2"><a href="#">Phan Ngô Minh Tâm</a></p>
+            <section class="follow" id="follow">
+                <h3 style="margin-top: 2rem;font-size: 1.5rem;">Theo dõi chúng tôi!</h3>
+                <div class="container-fluid">
+                    <div class="swiper-container containerP">
+                        <div class="swiper-wrapper content">
+                            <!--slide 1-->
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <div class="image">
+                                        <img src="img/avt.png" alt="">
+                                    </div>
+            
+                                    <div class="media-icons">
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href="https://github.com/minhtamphan373">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a> 
+                                    </div>
+            
+            
+                                    <div class="name-profession">
+                                        <span class="name">Phan Ngô Minh Tâm</span>
+                                        <span class="profession">Front-End</span>
+                                    </div>
+            
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-stroke"></i>
+                                    </div>
+            
+                                    <div class="button-1">
+                                        <button class="aboutme">Thông tin chi tiết!</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end slide1-->  
+            
+                            <!--slide 2-->
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <div class="image">
+                                        <img src="img/avt.png" alt="">
+                                    </div>
+            
+                                    <div class="media-icons">
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a> 
+                                    </div>
+            
+            
+                                    <div class="name-profession">
+                                        <span class="name">Nguyễn Thị Cẩm Tiên</span>
+                                        <span class="profession">Front-End</span>
+                                    </div>
+            
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-stroke"></i>
+                                    </div>
+            
+                                    <div class="button-1">
+                                        <button class="aboutme">Thông tin chi tiết!</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end slide2-->  
+            
+                            <!--slide 3-->
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <div class="image">
+                                        <img src="img/avt.png" alt="">
+                                    </div>
+            
+                                    <div class="media-icons">
+                                        <a href="https://www.facebook.com/profile.php?id=100013762785577">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/bchqyn_iue/">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href="https://github.com/bichquyen05">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a> 
+                                    </div>
+            
+                                    <div class="name-profession">
+                                        <span class="name">Đào Thị Bích Quyên</span>
+                                        <span class="profession">Front-End</span>
+                                    </div>
+            
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-stroke"></i>
+                                    </div>
+            
+                                    <div class="button-1">
+                                        <button class="aboutme">Thông tin chi tiết!</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end slide3-->  
+            
+            
+                            <!--slide 4-->
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <div class="image">
+                                        <img src="img/avt.png" alt="">
+                                    </div>
+            
+                                    <div class="media-icons">
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href="https://github.com/B-baoha-H">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a> 
+                                    </div>
+            
+                                    <div class="name-profession">
+                                        <span class="name">Nguyễ Thị Bảo Hà</span>
+                                        <span class="profession">Back-End</span>
+                                    </div>
+            
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-stroke"></i>
+                                    </div>
+            
+                                    <div class="button-1">
+                                        <button class="aboutme">Thông tin chi tiết!</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end slide4-->  
+            
+                            <!--slide 5-->
+                            <div class="swiper-slide card">
+                                <div class="card-content">
+                                    <div class="image">
+                                        <img src="img/avt.png" alt="">
+                                    </div>
+            
+                                    <div class="media-icons">
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href="https://github.com/MgnouC">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a> 
+                                    </div>
+            
+            
+                                    <div class="name-profession">
+                                        <span class="name">Phan Đỗ Mạnh Cường</span>
+                                        <span class="profession">Back-End</span>
+                                    </div>
+            
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-stroke"></i>
+                                    </div>
+            
+                                    <div class="button-1">
+                                        <button class="aboutme">Thông tin chi tiết!</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end slide5-->  
                         </div>
-                        <!--Thanh vien 2-->
-                        <div class="col-2">
-                            <img src="img/avt.png" alt="" class="avt row-2">
-                            <p class="row-2"><a href="#">Đào Thị Bích Quyên</a></p>
-                        </div>
-                        <!--Thanh vien 3-->
-                        <div class="col-2">
-                            <img src="img/avt.png" alt="" class="avt row-2">
-                            <p class="row-2"><a href="#">Nguyễn Thị Cẩm Tiên</a></p>
-                        </div>
-                        <!--Thanh vien 4-->
-                        <div class="col-2">
-                            <img src="img/avt.png" alt="" class="avt row-2">
-                            <p class="row-2"><a href="#">Nguyễn Thị Bảo Hà</a></p>
-                        </div>
-                        <!--Thanh vien 5-->
-                        <div class="col-2">
-                            <img src="img/avt.png" alt="" class="avt row-2">
-                            <p class="row-2"><a href="#">Phan Đỗ Mạnh Cường</a></p>
-                        </div>
+            
                     </div>
                 </div>
+                <!--end-->
+                
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> 
+                
             </section>
             
             <!-- CONTACT - LIEN HE -->
@@ -142,7 +330,7 @@
                             <span>Số điện thoại: </span><a href="tel://0250250254">(+84) 25 025 0254</a></p>
                         <p class="contact-description-text">
                             <span>Email: </span><a href="mailto:tracnghiem@gmail.com">tracnghiem@gmail.com</a></p>
-                        <img src="/img/map.PNG" alt="#" class="img-map">
+                        <img src="img/map.PNG" alt="#" class="img-map">
                     </div>
 
                     <div class="col-second contact-form">
@@ -173,8 +361,11 @@
             </footer>          
         </main>  
 
-        <script src="/js/script.js"></script>
+        <script src="js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="js/slide_contact.js"></script>
     </body>
 
 

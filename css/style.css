@@ -38,7 +38,7 @@ article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section {
 .row {
     width: 100%;
     content: "";
-    display: inline-block;
+    display: block;
     clear: both;
 }
 .col {
@@ -273,6 +273,9 @@ article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section {
 }
 
 /********** CONTACT - THEO DOI **********/
+.follow{
+    margin-left:auto;
+}
 .container-fluid {
     width: 100%;
     padding-right: 15px;
@@ -293,6 +296,157 @@ article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section {
     justify-items: center;
     margin-left: 60px;
 }
+.containerP{
+    position: relative;
+    height: 350px;
+    width: 1070px;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 10%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.swiper{
+    width: 950px;
+}
+
+section .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #7d2ae8;
+}
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.card{
+    position: relative;
+    background: #edebeb;
+    border-radius: 20px;
+    margin: 20px 0;
+
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: #91aec4;
+    border-radius: 20px 20px 0 0;
+}
+
+.swiper-wrapper.content{
+    gap: 2px;
+}
+section .swiper-pagination{
+    position: relative;
+    margin-top: 80px;
+}
+section .swiper-button-next{
+    margin-top: 1075px;
+    margin-right: 20px;
+}
+section .swiper-button-prev{
+    margin-top: 1075px;
+}
+.swiper-pagination-bullets{
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: white;
+    margin-right: 100px;
+}
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+.card .media-icons{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    color: #000;
+}
+
+.card.media-icons i{
+    color: #fff;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card.media-icons i:hover{
+    opacity: 1;
+}
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+}
+.name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.name-profession .profession{
+    font-size: 15px;
+    font-weight: 500;
+}
+.card .rating{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.card .rating i{
+    font-size: 18px;
+    margin: 0 2px;
+    color: #dee114;
+}
+.card .button-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card .button-1 button{
+    background: #91aec4;
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.button-1 button-1:hover{
+    background: #6616d0;
+}
+.button-1 .aboutme{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.media-icons a{
+    color: black;
+}
+
 /********** FOOTER **********/
 .footer-sub-heading {
     font-style: italic;
@@ -309,73 +463,22 @@ footer{
 }
 
 
-    
-h2,.h2{
-    font-size: 2.3rem;
-    margin-left: auto;
-    margin-top: 4.3rem;
-    color:black;
+/*tham khao*/
+.img-monhoc{
+    width: 100px;
+    height: 150px;
+    margin-top: .2rem;
 }
-.col {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    box-flex: 1;
-    position: relative;
-    flex-grow: 1;
-    max-width: 100%;
-    flex: 0 0 31.25%;
-    flex-wrap: wrap;
-    margin-left: 20px;
-}
-
-/* .row {
-    display: inline-flex;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px; 
-} */
-
-
-
-.col-1{
-    max-width: 50%;
-    flex: 0 0 10%;
-    display: block;
-    margin: auto;
-    width: 200px;
-    height: 300px;
-    box-shadow: 0 2px 5px ;
-    bottom: 0px;
-    margin-left: 30px;
-}
-
-.btn{
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
+.ti-book{
+    width: 15rem;
+    height: 17rem;
     vertical-align: middle;
-    width: 150px;
-    height: 35px;
-    border-radius: 5px;
-    user-select: none;
-    padding: 0.375rem 0.75rem;
-    border: 1px solid transparent;
-    text-align: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    line-height: 1.5;  
+    justify-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex: 0 0 25%;
+    margin-left: 4rem;
 }
-
-
-
-.profile{
-    text-align: center;
-    margin-top: 0rem;
-}
-
 .grid-container {
     display: grid;
     column-gap: 3rem;
@@ -390,49 +493,7 @@ h2,.h2{
     font-size: 1rem;
 }
 
-.col-wrap {
-    display: table; 
-    width: 100%; 
-}
-
-.col-2 {
-    display: table-cell;
-    padding: 1rem;
-    width: max-content;
-    padding: 3rem;
-    text-align: center;
-    flex: 0 0 25%;
-    box-sizing: border-box;
-    display:flexbox;
-    flex-wrap: wrap;
-    margin-right: 5rem;
-    margin-left: 0rem;
-    column-gap: 0rem;
-
-}
-
-.row-2{
-    margin-top: 0.1rem;
-    text-align: left;
-    width: max-content;
-   margin-left: -2rem;
-}
-
-.row-2 .a{
-    text-align: left;
-}
-
-/* .contact-container .row{
-    margin-top: 1rem;
-} */
-
-
-
-
-.col-fourth.sub-feature-content .button{
-    margin-top: 2rem;
-} 
-
+/*chi dan*/
 .breadcrumb {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -470,8 +531,10 @@ h2,.h2{
 }
 
 .breadcrumb-item.active {
-    color: #676e74; 
+    color: black; 
 }
+
+/*DT_TracNghiem*/
 div.ol{
     text-align: center;
 }
@@ -487,8 +550,9 @@ h3{
 .row::after {
     content: "";
     display: table;
+    bottom: -1rem;
+    margin-bottom: -1rem;
     clear: both;
-  
 }
 
 .text-list .text-item{
@@ -500,13 +564,20 @@ h3{
     border-color: var(--text-dark-color);
 }
 .text-item .container{
-    margin-top: .5rem;
+    margin-top: .3rem;
+    margin-bottom: -7rem;
 }
-.col-4.col-lg-4.col-sm-4.relative{
+
+.col-3.col-lg-3.col-sm-3.relative{
     flex: 0 0 25%;
 }
 .col-9.col-lg-9.col-sm-9{
-    margin-left: 2rem;
+    position:relative;
+    top:-11rem;
+    bottom: -5rem;
+    box-sizing: border-box;
+    left: 3rem;
+    margin-left: 5.5rem;
 }
 
 .text-item-primary{
@@ -524,7 +595,7 @@ h3{
 }
 
 
-h4{
+h1,h4{
     margin-top: 1rem;
     margin-bottom: .75rem;
 }
@@ -533,9 +604,13 @@ h4{
 }
 
 .img_De{
-    width: 60px;
-    height: 80px;
+    width: 120px;
+    height: 180px;
     margin-top: .2rem;
+}
+h5{
+    font-size: 16px;
+    line-height: 1.5;
 }
 .btn-click{
     display: inline-block;
@@ -545,9 +620,9 @@ h4{
     vertical-align: middle;
     width: 140px;
     height: 35px;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     border-radius: 5px;
-    background-color:gold;
+    background-color:#b7d0e1;
     user-select: none;
     padding: 0.375rem 0.75rem;
     border: 1px solid transparent;
@@ -558,29 +633,33 @@ h4{
 }
 .justify-content-center{
     justify-content: center;
+    margin-bottom: -5rem;
+}
+.row .justify-content-center{
+    position: relative;
 }
 .algign-selt-center{
     align-self: center;
 }
-
-.img-monhoc{
-    width: 100px;
-    height: 150px;
-    margin-top: .2rem;
+.view-detail {
+    padding: 1px 1px 1px;
+    font-size: .9rem;
+    display: block;
+    bottom: 1rem;
+    line-height: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.ti-book{
-    width: 15rem;
-    height: 17rem;
-    vertical-align: middle;
-    justify-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    flex: 0 0 25%;
-    margin-left: 4rem;
+.view-detail i::before {
+    padding-left: .1rem;
+    padding-right: .3rem;
 }
-
+.view-detail p{
+    line-height: 3rem;
+}
+/**/
 
 h1{
+    padding-top: 3rem;
     text-align:center;
     color:#F00; font-family:Arial;
 }
