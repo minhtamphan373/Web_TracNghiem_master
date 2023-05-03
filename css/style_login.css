@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 :root {
-  --main-color: #abc9f4;
+  --btn-hover-color:#5f84a2;
+  --btn-color:#b7d0e1;
+  --text-dark-color: #194569;
+  --text-light-color: #5f84a2;
+
+  --blue-first-color: #cadeed;
+  --blue-second-color: #b7d0e1;
+  --blue-third-color: #91aec4;
+  --blue-fourth-color: #5f84a2;
+  --blue-fifth-color: #194569;
 }
 
 * {
@@ -73,24 +82,27 @@ font-weight: bolder;
 }
 
 .log-in-btn, .sign-in-btn {
-  font-size: .9rem;
-  font-weight: bolder;
-  background-color: var(--main-color);
-  border: none;
-  border-radius: 40px;
-  padding: 12px;
+  border-radius: 20px;
+    border: 1px solid var(--btn-color);
+    background-color: var(--btn-color);
+    color:black;
+    font-size: .7rem;
+    font-weight: bold;
+    padding: 12px;
+    margin: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
 }
 
-.log-in-btn:hover {
-  cursor: pointer;
-  background-color: #6792CF; 
-  color: #fff;
-}
+.log-in-btn:hover,
 .sign-in-btn:hover {
   cursor: pointer;
-  background-color: #6792CF;
-  color: #fff;
+    border: 1px solid var(--btn-hover-color); 
+    background-color: var(--btn-hover-color); 
+    color: #fff;
 }
+
 
 
 .photo {
