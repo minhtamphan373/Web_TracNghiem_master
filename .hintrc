@@ -9,7 +9,9 @@
         "ignore": [
           "@-ms-viewport",
           "user-select",
-          "box-flex"
+          "box-flex",
+          "scroll-behavior",
+          "width: fit-content"
         ]
       }
     ],

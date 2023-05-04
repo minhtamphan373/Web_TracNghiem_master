@@ -1,16 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 :root {
-  --btn-hover-color:#5f84a2;
-  --btn-color:#b7d0e1;
-  --text-dark-color: #194569;
-  --text-light-color: #5f84a2;
-
-  --blue-first-color: #cadeed;
-  --blue-second-color: #b7d0e1;
-  --blue-third-color: #91aec4;
-  --blue-fourth-color: #5f84a2;
-  --blue-fifth-color: #194569;
+  --main-color: #abc9f4;
 }
 
 * {
